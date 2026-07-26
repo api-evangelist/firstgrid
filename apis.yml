@@ -1,7 +1,32 @@
 aid: firstgrid
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/firstgrid.png
 name: firstgrid
-description: firstgrid is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  The domain firstgrid.cn resolves to Shanghai Shouige Network Technology Co.,
+  Ltd. (上海首格网络科技有限公司 / "Shouige Network"), a Chinese software and
+  logistics-services provider focused on the medical-device industry. Its
+  products include the Medical Jiecloud Platform (医捷云), a bidirectional
+  logistics intelligence and supply-chain management system, a public database
+  platform, and third-party warehousing/distribution services for medical-device
+  producers, distributors, and 3PLs, with offices in Shanghai and an R&D center
+  in Hangzhou. The company was surfaced as a portfolio lead of the venture firm
+  qiming and added to the API Evangelist network as a stub. As of this
+  enrichment pass the public site is a Chinese-language corporate marketing site
+  and exposes no public API, developer portal, OpenAPI, SDKs, or documentation
+  surface, so no API artifacts could be harvested. Note: the recorded English
+  name "firstgrid" is the pinyin of 首格 (Shǒugé) and the domain/company identity
+  should be verified against the intended qiming portfolio company.
 url: https://raw.githubusercontent.com/api-evangelist/firstgrid/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +36,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Medical Devices
+- Supply Chain
+- Logistics
+- Healthcare
+- Software
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +52,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/firstgrid-domain-security.yml
 - type: Website
-  url: https://firstgrid.cn
+  url: https://www.firstgrid.cn
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
